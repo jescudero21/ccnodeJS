@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+<title>Factorial FCTRL</title>
+<style>
+	div {border-style: solid;}
+</style>
+<script src="FCTRL.js"></script> 
+<script>
+function showOutput()
+{
+   inputValue = document.getElementById('text').value;
+   // replace JavaScript line break with HTML <br>
+   inputValue = inputValue.replace(/(?:\r\n|\r|\n)/g, '<br>');
+   document.getElementById('output').innerHTML=damezeros(inputValue) ;
+   return false;
+}
+</script>
+
+</head>
+<body>
+
+	<h1>Factorial <a href="https://www.codechef.com/problems/FCTRL" target="_blank">FCTRL</a></h1>
+
+<form name="form">
+
+</br>Input</br>
+<div id="input">
+  <input id="text" name="text">
+ <input type="submit" id="btn" value="Enviar" onclick="return showOutput();">
+ </div>
+
+</br></br>Output</br>
+<div id="output">...</div>
+
+</form>
+
+</br></br>
+<table border="1px">
+	<tr><th>Input</th><th>Output</th><th>Extra</th></tr>
+    <tr>
+    	<td>
+			3</br>
+			60</br>
+			100</br>
+			1024</br>
+			23456</br>
+			8735373
+		</td>
+    	<td>
+			0</br>
+			14</br>
+			24</br>
+			253</br>
+			5861</br>
+			2183837
+		</td>
+		<td>
+- https://www.calculatorsoup.com/calculators/discretemathematics/factorials.php</br>
+		</td>
+    </tr> 
+</table>
+
+
+</body>
+</html>
